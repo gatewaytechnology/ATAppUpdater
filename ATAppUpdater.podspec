@@ -11,9 +11,10 @@ Pod::Spec.new do |s|
 
   s.platform		= :ios, '7.0'
   s.requires_arc	= true
-  s.source		= { :git => "https://github.com/emotality/ATAppUpdater.git", :tag => s.version.to_s }
+  s.source		= { :git => "https://github.com/gatewaytechnology/ATAppUpdater.git", :tag => s.version.to_s }
   s.source_files	= 'ATAppUpdater/*.{m,h}'
   s.public_header_files = 'ATAppUpdater/*.h'
   s.frameworks 		= 'UIKit', 'SystemConfiguration'
-  s.dependency	= 'Reachability'
+
+  s.dependency 'Reachability'
 end
